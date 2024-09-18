@@ -1,0 +1,116 @@
+/* 
+
+  Author: ONANA Vital
+  Sponsor: WebByte Agency
+  Creation: 17/09/2024
+
+*/
+
+/* Variables */
+:root {
+  --main-color: #1057b3;
+  --black: #000;
+  --white: #fff;
+  --radius: 50px;
+  --font: Figtree;
+}
+
+* {
+  font-family: var(--font);
+}
+*::selection {
+  background-color: var(--main-color);
+  color: var(--black);
+}
+
+body {
+  background-color: var(--black);
+}
+body::-webkit-scrollbar {
+  background-color: var(--color);
+  border-radius: 50px;
+  width: 2px;
+  padding: 3em;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar-corner {
+  background-color: #fff;
+  border-radius: 100vw;
+  width: 1px;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar-button {
+  display: none;
+  border-radius: 50px;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--green) !important;
+  border-radius: 5px;
+  width: 0.5px;
+  padding: 5em;
+  border: .25em solid transparent;
+  z-index: 1;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #fff !important;
+  border-radius: 2px;
+  width: 0.1px;
+  padding: 5em;
+  border: none;
+  z-index: 1;
+}
+
+/* Load */
+.load {
+  background-color: #000;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0s ease-in 0.9s;
+}
+
+.load .loader img {
+  animation: zoomIn 1s;
+}
+
+/* Nav */
+nav {
+  background-color: var(--black);
+}
+
+/* Buttons */
+.btn {
+  background-color: var(--main-color);
+  border-radius: var(--radius);
+  color: var(--white);
+}
+
+/* Banner */
+#banner {
+  background: radial-gradient(circle at 50% 120%, #1057b3, rgb(0, 0, 0) 50%);
+}
+
+#marketing {
+  background: radial-gradient(circle at 50% 120%, #04080e, rgb(0, 0, 0) 50%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.901),
+  rgba(16, 87, 179, 0.929));
+}
+
+#testimonials #card {
+  background-color: #080808;
+  transition: all 0.3s ease-in 0s;
+}
+#testimonials #card:hover {
+  background-color: #050505;
+}

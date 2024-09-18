@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- JS & CSS -->
+    <link rel="stylesheet" href="lib/animate.css">
+    <link rel="stylesheet" href="lib/tailwind.css">
+    <link rel="stylesheet" href="stylesheet/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
+
+    <!-- JS -->
+    <script src="js/main.js"></script>
+
+    <title>X</title>
+</head>
+<!-- Body -->
+
+<body>
+    <div class="load fixed top-0 bg-black">
+        <div class="loader">
+            <img src="assets/img/download.png" height="100" width="100">
+        </div>
+    </div>
+
+    <header class="header">
+        <nav class="fixed top-0 w-full" id="nav" style="z-index:990;">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+                <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+                    <img src="assets/img/logo.png" class="h-16 w-20" alt="Flowbite Logo" />
+                </a>
+                <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+                    <a href="#"
+                        class="btn hidden sm:inline-block rounded-full px-6 py-3 text-sm font-medium transition hover:shadow-lg focus:outline-none">
+                        Créer un compte
+                    </a>
+                    <button data-collapse-toggle="navbar-cta" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-centermd:hidden"
+                        aria-controls="navbar-cta" aria-expanded="false">
+                        <img src="assets/img/menu.png" alt="menu">
+                    </button>
+                </div>
+                <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-cta">
+                    <ul
+                        class="flex flex-col font-medium p-4 md:p-0 mt-4 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0">
+                        <li>
+                            <a href="#" class="block py-2 px-3 md:p-0 text-white">Accueil</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 md:p-0 text-white">Fonctionnalités</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 md:p-0 text-white">Grok</a>
+                        </li>
+                        <li>
+                            <a href="#" class="block py-2 px-3 md:p-0 text-white">Premium</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner -->
+    <section class="flex justify-center" id="banner">
+        <div class="max-w-5xl">
+            <div class="pt-32 sm:pt-40 pb-20 flex flex-wrap justify-around text-center">
+                <div class="block sm:p-auto p-6">
+                    <h2 class="text-4xl text-white font-extrabold sm:text-6xl leading-none">
+                        Un espace d'échanges, fiable qui s'adrèsse à tous, partout dans sur la planète.
+                    </h2>
+                    <p class="mt-4 text-gray-500 text-1xl sm:text-1xl">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis ducimus cum tenetur
+                        corrupti, deleniti molestiae, quas similique vel quisquam ex repellendus.
+                    </p>
+
+                    <a href="#"
+                        class="mt-8 inline-block rounded-full px-12 py-3 text-sm font-medium text-white transition shadow-lg hover:shadow-lg focus:outline-none focus:ring" style="background-color:var(--main-color);">
+                        Télécharger l'Application
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="flex flex-wrap justify-center" style="margin-top:-40px;">
+        <div class="max-w-5xl">
+            <img src="assets/img/flow.png" alt="Feed" class="rounded-lg">
+        </div>
+    </div>        
+    
+    <!-- Stats -->
+    <div class="flex flex-wrap justify-center text-white gap-8 sm:gap-20 pt-20 pb-20">
+        <div class="block text-center">
+            <h2 class="font-normal text-3xl sm:text-5xl font-extrabold">30+</h2>
+            <h4 class="font-normal sm:text-2xl">Bureaux</h4>
+        </div>
+        <div class="block text-center">
+            <h2 class="font-normal text-3xl sm:text-5xl font-extrabold">25+</h2>
+            <h4 class="font-normal sm:text-2xl">Partenaires</h4>
+        </div>
+        <div class="block text-center">
+            <h2 class="font-normal text-3xl sm:text-5xl font-extrabold">900M+</h2>
+            <h4 class="font-normal sm:text-2xl">Utilisateurs</h4>
+        </div>
+        <div class="block text-center">
+            <h2 class="font-normal text-3xl sm:text-5xl font-extrabold">750M+</h2>
+            <h4 class="font-normal sm:text-2xl">Téléchargements</h4>
+        </div>
+    </div>
+
+    <!-- Marketing -->
+    <section class="sections pt-10 p-3 sm:p-20" id="marketing">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-6xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div class="text-white sm:text-lg">
+                <div class="text-white sm:text-lg">
+                    <li class="mb-6 block items-center">
+                        <span class="flex">
+                            <svg class="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="6" height="6" stroke="currentColor" fill="var(--white)" viewBox="0 0 1792 1792">
+                                <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                                </path>
+                            </svg><b class="font-bold">Accéder à X Platform</b><br>
+                        </span>
+                        <p class="text-1xl">
+                            Prenez connaissance du contenu de la plateforme.
+                        </p>
+                    </li>
+                    <li class="mb-6 block items-center">
+                        <span class="flex">
+                            <svg class="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="6" height="6" stroke="currentColor" fill="var(--white)" viewBox="0 0 1792 1792">
+                                <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                                </path>
+                            </svg><b class="font-bold">Créer votre compte</b><br>
+                        </span>
+                        <p class="text-1xl">
+                            Rendez-vous dans la page d'inscription pour freelance et remplissez le formulaire.
+                        </p>
+                    </li>
+                    <li class="mb-6 block items-center">
+                        <span class="flex">
+                            <svg class="w-6 h-6 mr-2" xmlns="http://www.w3.org/2000/svg" width="6" height="6" stroke="currentColor" fill="var(--white)" viewBox="0 0 1792 1792">
+                                <path d="M1412 734q0-28-18-46l-91-90q-19-19-45-19t-45 19l-408 407-226-226q-19-19-45-19t-45 19l-91 90q-18 18-18 46 0 27 18 45l362 362q19 19 45 19 27 0 46-19l543-543q18-18 18-45zm252 162q0 209-103 385.5t-279.5 279.5-385.5 103-385.5-103-279.5-279.5-103-385.5 103-385.5 279.5-279.5 385.5-103 385.5 103 279.5 279.5 103 385.5z">
+                                </path>
+                            </svg><b class="font-bold">Faites la promotion de votre profil </b><br>
+                        </span>
+                        <p class="text-1xl">
+                            Une fois votre profil créer, vous pouvez créer du contenu, commenter des tweets...
+                        </p>
+                    </li>
+                </div>
+                <br>
+                <a href="#" class="btn inline-block rounded-full px-6 py-3 text-sm font-medium transition hover:shadow-lg focus:outline-none focus:ring" style="background-color:var(--main-color);color:var(--white)">
+                    Découvrir l'Application
+                </a>
+            </div>
+            <div class="block mt-8">
+                <img class="rounded-md shadow-lg" src="assets/img/flow (1).jpg" style="width:1000px;height:700px;border:0px solid var(--main-color)">
+            </div>
+        </div>
+    </section>
+
+    <section class="sections pt-10 p-3 sm:p-20">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-6xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div class="block mt-8">
+                <img class="rounded-md shadow-lg" src="assets/img/flow (3).jpg" style="width:1000px;height:700px;border:0px solid var(--main-color)">
+            </div>
+            <div class="text-white sm:text-lg">
+                <div class="text-white">
+                    <h2 class="font-bold text-3xl sm:text-6xl" style="line-height:1.1;">
+                        Votre opinion est la bienvenue !
+                    </h2>
+                    <p class="text-2xl text-white mt-4">
+                        Devenez un figure d'influence sur X Platform en partageant vos idéaux tout en créant un contenu agréable à vos followers.
+                    </p>
+                </div>
+                <br>
+                <a href="#" class="btn inline-block rounded-full px-6 py-3 text-sm font-medium transition hover:shadow-lg focus:outline-none focus:ring" style="background-color:var(--main-color);color:var(--white)">
+                    Découvrir l'Application
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="more" class="pt-10 pb-10 sm:pt-32 sm:pb-32" style="background-color:#080808;">
+        <div class="flex flex-wrap justify-around align-middle items-center p-8">
+          <h1 class="font-extrabold text-center sm:text-left text-4xl sm:text-6xl text-white" style="line-height:1.1;">
+            Crée ton compte et <br> partage ton avis <br> librement !
+          </h1>
+          <br>
+          <span class="mb-10 sm:mb-0">
+            <a href="#">
+              <img src="assets/img/right.png" class="p-2 rounded-full mt-6 sm:mr-auto mr-20" height="95" width="90" style="background-color: var(--main-color);transform: rotate(320deg);">
+            </a>
+          </span>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <div class="flex justify-center pt-32">
+        <h4 class="text-2xl max-w-2xl text-center mb-4" style="color:var(--main-color);">#XLoVERS</h4><br>
+    </div>
+    <div class="flex justify-around text-center text-white p-3 sm:p-0" id="testimonials">
+        <h1 class="max-w-2xl text-center mb-1 text-4xl font-extrabold md:text-5xl xl:text-6xl" style="line-height: 1.2;">
+            X Platform est adopté à travers le monde
+        </h1>
+    </div>
+    <br>
+    <div class="flex justify-around" id="testimonials" style="margin-top:-80px;">
+        <div class="pt-10 pb-56 sm:p-40 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="w-full rounded-lg p-12 flex flex-col justify-center items-center" id="card">
+                <div class="mb-8">
+                    <img class="object-center object-cover rounded-full h-32 w-32" src="assets/img/user.jpg" alt="photo">
+                </div>
+                <div class="text-center">
+                    <p class="text-xl text-white font-bold mb-2">Allan Turing</p>
+                    <p class="text-base text-gray-300 font-normal">
+                        <i>
+                            " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus voluptatum quidem eaque
+                            voluptatem fuga vero vitae tempora sed ipsam repellendus adipisci, architecto laudantium, quas
+                            aspernatur eius esse consequatur minus? Aliquam. "
+                        </i>
+                    </p>
+                </div>
+            </div>
+            <div class="w-full rounded-lg p-12 flex flex-col justify-center items-center" id="card">
+                <div class="mb-8">
+                    <img class="object-center object-cover rounded-full h-32 w-32" src="assets/img/user.jpg" alt="photo">
+                </div>
+                <div class="text-center">
+                    <p class="text-xl text-white font-bold mb-2">Allan Turing</p>
+                    <p class="text-base text-gray-300 font-normal">
+                        <i>
+                            " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus voluptatum quidem eaque
+                            voluptatem fuga vero vitae tempora sed ipsam repellendus adipisci, architecto laudantium, quas
+                            aspernatur eius esse consequatur minus? Aliquam. "
+                        </i>
+                    </p>
+                </div>
+            </div>
+            <div class="w-full rounded-lg p-12 flex flex-col justify-center items-center" id="card">
+                <div class="mb-8">
+                    <img class="object-center object-cover rounded-full h-32 w-32" src="assets/img/user.jpg" alt="photo">
+                </div>
+                <div class="text-center">
+                    <p class="text-xl text-white font-bold mb-2">Allan Turing</p>
+                    <p class="text-base text-gray-300 font-normal">
+                        <i>
+                            " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus voluptatum quidem eaque
+                            voluptatem fuga vero vitae tempora sed ipsam repellendus adipisci, architecto laudantium, quas
+                            aspernatur eius esse consequatur minus? Aliquam. "
+                        </i>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call for action -->
+    <section class="flex justify-center">
+        <div class="flex flex-wrap justify-center mb-10 mt-10 pb-20">
+            <div class="block p-1">
+                <h1 class="max-w-2xl text-center text-white mb-4 text-4xl font-extrabold md:text-5xl xl:text-6xl" style="line-height: 1.2;">
+                    Activer rapidement et <br> facilement votre compte <b>X</b>
+                </h1>
+                <div class="flex justify-center my-10">
+                    <a href="#" class="button-two flex items-center shadow-lg rounded-full" target="_blank" style="color:var(--white);width:160px;padding:12px;background-color: var(--main-color);margin-right:0.5em;border:none;">
+                        <span><img src="assets/img/play_store.png" height="30" width="30"></span>
+                        <span class="ml-1">Play Store</span>
+                    </a>
+                    <a href="#" class="button-two flex items-center shadow-lg rounded-full hover:shadow-lg" target="_blank" style="color:var(--white);width:160px;padding:12px;background-color: #080808;border:2px solid var(--main-color);margin-right:0.5em;">
+                        <span><img src="assets/img/appstore.png" height="30" width="30"></span>
+                        <span class="ml-1">App Store</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <div class="flex justify-center p-6">
+        <h2 class="text-white text-1xl sm:text-2xl text-center">
+            Created with ❤️ By <a href="wa.me/237652148417" class="underline">ONANA Vital</a>
+        </h2>
+    </div>
+
+</body>
+</html>
